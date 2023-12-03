@@ -17,7 +17,7 @@ steps:
     javaHomeOption: 'JDKVersion'
     jdkVersionOption: '1.11'
     jdkArchitectureOption: 'x64'
-    goals: 'package'
+    goals: 'install sonar:sonar'
 - task: SonarQubePrepare@5
   inputs:
     SonarQube: 'My-SonarQube'
