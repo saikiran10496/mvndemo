@@ -36,7 +36,7 @@ jobs:
     - name: SonarQube Scan
       uses: sonarsource/sonarqube-scan-action@v4.1.0
       with:
-        projectBaseDir: mvndemo
+        projectBaseDir:
         args: >
           -Dsonar.organization=my-org
           -Dsonar.projectKey=my-Java-web-app
